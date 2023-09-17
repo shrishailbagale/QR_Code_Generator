@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- EditText Style -->
+    <style name="MyEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:hint">Write Text or URL</item>
+        <item name="android:background">@drawable/bordered_edittext</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:minLines">1</item>
+        <item name="android:maxLines">10</item>
+        <item name="android:gravity">top</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="MyButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/textInput</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:text">Generate QR Code</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- ImageView Style -->
+    <style name="MyImageView">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@color/ic_bg</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".GenerateQRActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create QR Codes"
+            android:layout_marginBottom="30dp"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_primary"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/textInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="18dp"
+            android:hint="Write Text or URL"
+            android:background="@drawable/bordered_edittext"
+            android:inputType="textMultiLine"
+            android:minLines="1"
+            android:maxLines="10"
+            android:gravity="top"
+            android:scrollbars="vertical"/>
+
+        <Button
+            android:id="@+id/generateQRButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="400dp"
+            android:minWidth="400dp"
+            android:padding="16dp"
+            android:background="@drawable/rounded_button_bg"
+            android:text="Generate QR Code"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/qrCodeImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/qr"
+            android:background="@color/ic_bg"
+            android:layout_marginBottom="40dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/uploadButton"
+                style="@style/MyImageView"
+                app:srcCompat="@drawable/ic_upload"/>
+
+            <ImageView
+                android:id="@+id/copyLinkButton"
+                style="@style/MyImageView"
+                app:srcCompat="@drawable/ic_link"/>
+
+            <ImageView
+                android:id="@+id/downloadButton"
+                style="@style/MyImageView"
+                app:srcCompat="@drawable/ic_download"/>
+
+            <ImageView
+                android:id="@+id/whatsappButton"
+                style="@style/MyImageView"
+                app:srcCompat="@drawable/ic_whatsapp"/>
+
+            <ImageView
+                android:id="@+id/shareButton"
+                style="@style/MyImageView"
+                app:srcCompat="@drawable/ic_share"
+                android:contentDescription="Share" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/versionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="v1.0"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
