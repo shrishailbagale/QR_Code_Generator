@@ -67,7 +67,7 @@
         <ImageView
             android:id="@+id/upload_button"
             style="@style/MyImageView"
-            app:srcCompat="@drawable/ic_upload" />
+            app:srcCompat="@drawable/ic_link" />
         <ProgressBar
             android:id="@+id/progress_bar"
             style="?android:attr/progressBarStyleHorizontal"
