@@ -17,11 +17,11 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create QR Codes"
+            android:text="Generate QR Code"
             android:layout_marginBottom="30dp"
-            android:textSize="36sp"
+            android:textSize="26sp"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:gravity="center"/>
@@ -92,28 +92,12 @@
 
         </LinearLayout>
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp">
-
-            <TextView
-                android:id="@+id/versionTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="v1.0"
-                android:textSize="12sp"
-                android:layout_gravity="center_vertical" />
-        </LinearLayout>
-        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal"
             android:layout_gravity="center">
+
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
@@ -123,6 +107,15 @@
                 android:text="@string/author" />
 
         </LinearLayout>
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/tools"
+            android:id="@+id/adsdsfView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
 
 
     </LinearLayout>

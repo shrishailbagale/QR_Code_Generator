@@ -1,4 +1,4 @@
-package com.qrcode;
+package com.shriqrcode;
 
 import org.junit.Test;
 

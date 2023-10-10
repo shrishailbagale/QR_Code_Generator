@@ -1,4 +1,4 @@
-package com.qrcode;
+package com.shriqrcode;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -13,6 +13,7 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.qrcode.R;
 
 public class MainActivity extends AppCompatActivity {
     Button text, startScannerButton;

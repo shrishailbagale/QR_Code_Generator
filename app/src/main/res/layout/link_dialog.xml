@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:minWidth="340dp"
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text=""
+        android:text="Link/Url"
         android:textSize="18sp" />
 
     <Button
@@ -31,13 +31,18 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:layout_gravity="center">
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/tools"
+            android:id="@+id/adsdsfView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:text="@string/author" />
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
 
     </LinearLayout>
+
 </LinearLayout>

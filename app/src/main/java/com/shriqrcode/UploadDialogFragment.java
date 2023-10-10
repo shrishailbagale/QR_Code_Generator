@@ -1,4 +1,4 @@
-package com.qrcode;
+package com.shriqrcode;
 
 import android.annotation.SuppressLint;
 import android.os.AsyncTask;
@@ -11,6 +11,8 @@ import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
+
+import com.qrcode.R;
 
 public class UploadDialogFragment extends DialogFragment {
 

@@ -1,4 +1,4 @@
-package com.qrcode;
+package com.shriqrcode;
 
 import android.Manifest;
 import android.app.ProgressDialog;
@@ -24,7 +24,6 @@ import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.play.core.integrity.v;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -32,6 +31,7 @@ import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
+import com.qrcode.R;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

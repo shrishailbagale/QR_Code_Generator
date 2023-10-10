@@ -1,4 +1,4 @@
-package com.qrcode;
+package com.shriqrcode;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.fragment.app.DialogFragment;
+
+import com.qrcode.R;
 
 public class LinkDialogFragment extends DialogFragment {
 
